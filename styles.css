@@ -1,1 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #374259;
+    color: #F2D8D8;
+    font-weight: 300;
+    flex-direction: column;
+}
 
+a:any-link {
+    text-decoration: none;
+    color: #F2D8D8;
+}
+
+a:hover, button:hover {
+    animation: 500ms alternate infinite h-color;
+}
+
+@keyframes h-color {
+    from {
+        text-shadow: none;
+    } to {
+        text-shadow: 0 0 4px #F2D8D8;
+    }
+}
+
+h1 {
+    font-size: 32px;
+    height: fit-content;
+    width: fit-content;
+    margin: 16px auto;
+    padding: 16px 48px;
+
+}
+
+button, input {
+    border: 1px #5C8984 solid;
+    background-color: #545B77;
+    border-radius: 8px;
+    color: #F2D8D8;
+}
+
+.header {
+    min-height: auto;
+    background-color: #545B77;
+    width: 100vw;
+}
+
+.exercises {
+    width: 70vw;
+    height: fit-content;
+    align-self: center;
+    margin-bottom: 32px;
+}
+
+input {
+    width: 30px;
+}
