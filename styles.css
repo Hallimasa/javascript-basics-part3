@@ -19,7 +19,7 @@ a:any-link {
 }
 
 a:hover, button:hover {
-    animation: 500ms alternate infinite hover-animate;
+    animation: 500ms alternate-reverse infinite hover-animate;
 }
 
 @keyframes hover-animate {
@@ -77,8 +77,22 @@ input {
 }
 
 .footer a {
+    margin: 0 auto;
     display: flex;
+    height: fit-content;
+    width: fit-content;
     justify-content: center;
     align-items: center;
     padding: 4px 0;
+}
+
+.footer img {
+    height: 36px;
+    width: 36px;
+    left: 0;
+    transition: 200ms ease-in-out;
+}
+
+a:hover .img-front {
+    opacity: 0;
 }
