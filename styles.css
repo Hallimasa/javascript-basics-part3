@@ -9,6 +9,8 @@ body {
     color: #F2D8D8;
     font-weight: 300;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
 }
 
 a:any-link {
@@ -17,10 +19,10 @@ a:any-link {
 }
 
 a:hover, button:hover {
-    animation: 500ms alternate infinite h-color;
+    animation: 500ms alternate infinite hover-animate;
 }
 
-@keyframes h-color {
+@keyframes hover-animate {
     from {
         text-shadow: none;
     } to {
@@ -38,13 +40,18 @@ h1 {
 }
 
 button, input {
-    border: 1px #5C8984 solid;
+    border: 2px #5C8984 solid;
     background-color: #545B77;
     border-radius: 8px;
     color: #F2D8D8;
 }
 
-.header {
+input {
+    width: 50px;
+}
+
+.header,
+.footer {
     min-height: auto;
     background-color: #545B77;
     width: 100vw;
@@ -57,6 +64,21 @@ button, input {
     margin-bottom: 32px;
 }
 
-input {
-    width: 30px;
+#test1inputin.valid,
+#test2inputx.valid,
+#test2inputy.valid {
+    border: 2px #5C8984 solid;
+}
+
+#test1inputin.invalid,
+#test2inputx.invalid,
+#test2inputy.invalid {
+    border: 2px rgb(128, 0, 0) solid;
+}
+
+.footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0;
 }
